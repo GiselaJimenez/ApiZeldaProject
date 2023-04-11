@@ -12,7 +12,7 @@ export class ApiService {
   private UrlApi = 'https://zelda.fanapis.com/api'
 
   public getData(option: string): Observable<any> {
-    return this.http.get<any>(`${this.UrlApi}/${option}`)
+    return this.http.get<any>(`${this.UrlApi}/${option}?limit=100`)
   }
 
 }

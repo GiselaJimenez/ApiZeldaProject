@@ -1,10 +1,21 @@
 <div>
-  <h5>Options: </h5>
-  <select name="miselect" [(ngModel)]="option">
-  <option [value]="query" *ngFor="let query of queryTypes">{{query}}</option>
-  </select> <input type="button" value="Search" (click)="llenarData()">
-  <ul *ngFor="let item of data">
-    <li><h2>{{ item.name  }}</h2></li>
-    <li>{{ item.description  }}</li><br>
-  </ul>
-</div>
+  <label for="mySelect">Options: </label>
+  <select name="mySelect" class="form-select form-select-sm" [(ngModel)]="option">
+    <option [value]="query" *ngFor="let query of queryTypes" > {{ query }} </option>
+  </select>
+  <button class="btn btn-outline-success" (click)="addData()"> Search </button>
+  <div class="row card-group">
+    <div class="col-3" *ngFor="let item of data | paginate: { itemsPerPage: 3, currentPage: page }">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"> {{ item.name }} </h5>
+            <p class="card-text"> {{ item.description }} </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<pagination-controls (pageChange)=" page = $event" previousLabel="Previous" nextLabel="Next"> </pagination-controls>

@@ -1,0 +1,11 @@
+.container{
+  padding: 40px;
+}
+
+h2 {
+  display: flex;
+  font-family: 'the-leyend-of-zelda';
+  color: white;
+  font-size: 60px;
+  justify-content: center;
+}

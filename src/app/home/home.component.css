@@ -1,0 +1,31 @@
+.card-zelda-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-nintendo {
+  max-width: 35%;
+  max-height: 50%;
+  height: auto;
+  width: auto;
+}
+
+mat-card-title {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.text {
+  font-family: "minishcap", sans-serif;
+}
+
+ .card {
+  width: 30%;
+  margin: 0 5px 5px 0;
+  box-sizing: border-box;
+  padding: 10px;
+}

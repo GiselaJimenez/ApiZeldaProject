@@ -9,7 +9,7 @@ html, body {
 body { margin: 0; font-family:Roboto, "Helvetica Neue", sans-serif; }
 
 @font-face {
-  font-family: "the-leyend-of-zelda";
+  font-family: "the-legend-of-zelda";
   src: url(./assets/fonts/the-wild-breath-of-zelda.otf) format("opentype");
 }
 

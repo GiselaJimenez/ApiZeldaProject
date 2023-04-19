@@ -11,6 +11,7 @@ export class HomeComponent {
 
   data: any[] = []
 
+
   today = new Date().getFullYear()
 
   queryTypes: string[] = ["games", "characters", "places", "monsters", "bosses", "items", "dungeons"]

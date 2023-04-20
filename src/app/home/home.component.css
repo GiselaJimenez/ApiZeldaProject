@@ -35,8 +35,12 @@ p {
   justify-content: center;
 }
 
-.custom-paginator pagination-controls{
-  color: white !important;
+::ng-deep pagination-template span {
+  color: white;
+}
+
+::ng-deep pagination-template a.ng-star-inserted {
+  color: white;
 }
 
 .custom-paginator pagination-controls ::ng-deep .ngx-pagination .current {
